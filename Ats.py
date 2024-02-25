@@ -136,7 +136,7 @@ import subprocess
 import openpyxl
 
 
-data = pd.read_excel("C:\\Users\\syed\\OneDrive\\Desktop\\Final Project\\DPSD- Comprehensive vaiva Quiz details.xlsx")
+data = pd.read_excel("DPSD- Comprehensive vaiva Quiz details.xlsx")
 # data[:]
 
 ques=[]
