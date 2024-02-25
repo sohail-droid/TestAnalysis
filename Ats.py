@@ -1,3 +1,5 @@
+
+import os
 import streamlit as st
 import pandas as pd
 import re
@@ -6,9 +8,10 @@ import matplotlib.pyplot as plt
 from tabulate import tabulate
 import subprocess
 import openpyxl
+from PIL import Image
 
-#SMD SOHAIL
-data = pd.read_excel("DPSD- Comprehensive vaiva Quiz details.xlsx")
+
+data = pd.read_excel("C:/Users/syed/OneDrive/Desktop/Final Project/TestAnalysis/DPSD- Comprehensive vaiva Quiz details.xlsx")
 # data[:]
 
 ques=[]
@@ -53,7 +56,6 @@ for ques_no in ques:
     Des = ((sum_first-sum_last)/to_calculate*max(dict_questions[ques_no]))
     Descrimination_index.append(Des)
 
-#vijay
 
 total_indices = [sum(pair) for pair in zip(Fascilation_index, Descrimination_index)]
 
@@ -74,15 +76,13 @@ output_data['total_indices'] = output_data['total_indices'].round(2)
 for i, lst in enumerate([Fascilation_index, Descrimination_index, total_indices]):
     fig, ax = plt.subplots()
     ax.plot(lst)
-
-
     ax.set_title(f"Index graph {i + 1}")
     ax.set_ylabel("Question")
     ax.set_xlabel("Index")
     # plt.savefig(f"C:\\Users\\syed\\OneDrive\\Desktop\\Final Project\\index_graph_{i + 1}.png")
     # Show the plots
-# plt.show()
-
+    # plt.show()
+  
 data = None 
 
 def main():
@@ -93,8 +93,12 @@ def main():
     if uploaded_file is not None:
         data = pd.read_excel(uploaded_file)
         st.success("Data loaded successfully!")
-
         analyze_data(data)
+    st.markdown("Thank you for using my app! 👋")
+
+img = Image.open("C:\\Users\\syed\\OneDrive\\Desktop\\Final Project\\TestAnalysis\\4.jpg")
+st.image(img,caption="Welcome to Ats app!",width=700,channels="RGB")
+st.header("Test Item Analaysis")
 
 def get_unique_terms(data):
     unique_terms = []
@@ -126,10 +130,6 @@ def analyze_data(data):
     st.write(output_data.style.format({'Total Indices': "{:.2f}"}))
 
     st.dataframe(result_data)
-    
-
-#Venkat
-
 
 if __name__ == "__main__":
     main()
