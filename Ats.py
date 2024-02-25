@@ -11,7 +11,7 @@ import openpyxl
 from PIL import Image
 
 
-data = pd.read_excel("C:/Users/syed/OneDrive/Desktop/Final Project/TestAnalysis/DPSD- Comprehensive vaiva Quiz details.xlsx")
+data = pd.read_excel("DPSD- Comprehensive vaiva Quiz details.xlsx")
 # data[:]
 
 ques=[]
