@@ -7,7 +7,7 @@ from tabulate import tabulate
 import subprocess
 import openpyxl
 
-
+#SMD SOHAIL
 data = pd.read_excel("DPSD- Comprehensive vaiva Quiz details.xlsx")
 # data[:]
 
@@ -53,6 +53,7 @@ for ques_no in ques:
     Des = ((sum_first-sum_last)/to_calculate*max(dict_questions[ques_no]))
     Descrimination_index.append(Des)
 
+#vijay
 
 total_indices = [sum(pair) for pair in zip(Fascilation_index, Descrimination_index)]
 
@@ -127,7 +128,7 @@ def analyze_data(data):
     st.dataframe(result_data)
     
 
-
+#Venkat
 
 
 if __name__ == "__main__":
