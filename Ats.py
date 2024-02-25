@@ -96,8 +96,6 @@ def main():
         analyze_data(data)
     st.markdown("Thank you for using my app! 👋")
 
-img = Image.open("C:\\Users\\syed\\OneDrive\\Desktop\\Final Project\\TestAnalysis\\4.jpg")
-st.image(img,caption="Welcome to Ats app!",width=700,channels="RGB")
 st.header("Test Item Analaysis")
 
 def get_unique_terms(data):
