@@ -1,21 +1,11 @@
-Excel Data Analyzer with Streamlit.
+<h2><width="45"/>Excel Data Analyzer with Streamlit.
+
+<img align='right' src="https://storage.googleapis.com/pai-images/7c54ebeecdc34ef693697c9ed62da3e6.jpeg" width="1080">
 
 This Streamlit application allows users to upload an Excel file, analyze its contents, and visualize index graphs based on selected terms.
 ## Installation
 
 pip install streamlit
-
-```
-    
-## Run Locally
-
-
-Clone this repository to your local machine:
-
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
-
-
 
 ## User Dependencies
 
