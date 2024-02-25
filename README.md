@@ -235,5 +235,3 @@ This project is licensed under the MIT License.
 ├── 4.jpg
 └── requirements.txt
 
-![Logo](https://storage.googleapis.com/pai-images/7c54ebeecdc34ef693697c9ed62da3e6.jpeg)
-
