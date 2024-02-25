@@ -123,7 +123,8 @@
 #     return unique_terms
 
 # if __name__ == "__main__":
-    # main()
+#     main()
+
 
 import streamlit as st
 import pandas as pd
@@ -209,13 +210,6 @@ for i, lst in enumerate([Fascilation_index, Descrimination_index, total_indices]
     # Show the plots
 # plt.show()
 
-# st.title("Test Item Analaysis")
-# st.header("Welcome to Ats app!")
-# image = "C:\\Users\\syed\\Downloads\\Create captivating and expressive images that depi.jpg"
-st.image("C:\\Users\\syed\\OneDrive\\Desktop\\Final Project\\TestAnalysis\\4.jpg", caption='Healthy Day')
-# st.image(image, caption="Healthy Day", use_column_width=True)
-
-
 data = None 
 
 def main():
@@ -226,6 +220,7 @@ def main():
     if uploaded_file is not None:
         data = pd.read_excel(uploaded_file)
         st.success("Data loaded successfully!")
+
         analyze_data(data)
 
 def get_unique_terms(data):
@@ -261,7 +256,7 @@ def analyze_data(data):
     
 
 
-st.markdown("Thank you for using my app! 👋")
+
 
 if __name__ == "__main__":
     main()
