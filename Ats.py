@@ -128,6 +128,9 @@ def analyze_data(data):
     st.write(output_data.style.format({'Total Indices': "{:.2f}"}))
 
     st.dataframe(result_data)
-
+img = Image.open("C:\\Users\\syed\\Downloads\\A picture of a cat playing.jpg")
+#Proceed with processing the image
+st.image(img, caption="Welcome to Ats app!", width=700, channels="RGB")
+st.header("Test Item Analaysis")
 if __name__ == "__main__":
     main()
