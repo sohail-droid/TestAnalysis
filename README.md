@@ -2,6 +2,7 @@
 
 <img align='right' src="https://storage.googleapis.com/pai-images/7c54ebeecdc34ef693697c9ed62da3e6.jpeg" width="1080">
 
+
 This Streamlit application allows users to upload an Excel file, analyze its contents, and visualize index graphs based on selected terms.
 ## Installation
 
